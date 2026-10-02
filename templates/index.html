@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="VITLS — Your vitamins. Your flavor. Your way."
+    >
+
+    <title>VITLS | Your vitamins. Your flavor. Your way.</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="site-header">
+
+        <a href="{{ url_for('home') }}" class="logo">
+            VITLS
+        </a>
+
+        <nav class="desktop-nav">
+
+            <a href="{{ url_for('home') }}" class="active">
+                Home
+            </a>
+
+            <a href="#" class="eshop-link">
+                E-shop
+            </a>
+
+            <a href="{{ url_for('about') }}">
+                About us
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+        <a href="#" class="header-shop-button eshop-link">
+            E-shop
+            <span>↗</span>
+        </a>
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open menu"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <!-- =====================================
+         MOBILE MENU
+    ====================================== -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="{{ url_for('home') }}">
+            Home
+        </a>
+
+        <a href="#" class="eshop-link">
+            E-shop
+        </a>
+
+        <a href="{{ url_for('about') }}">
+            About us
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </div>
+
+
+    <main>
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    MADE FOR YOUR DAY
+                </p>
+
+                <h1>
+                    Your vitamins.<br>
+                    Your flavor.<br>
+                    <span>Your way.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Vitamins don't have to be another thing
+                    to remember. VITLS makes them an easy,
+                    enjoyable part of your day — made your way.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a
+                        href="#"
+                        class="button button-primary eshop-link"
+                    >
+                        Discover VITLS
+                        <span>→</span>
+                    </a>
+
+                    <a href="#vitls" class="text-link">
+                        How it works
+                        <span>↓</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT VISUAL -->
+
+            <div class="hero-visual">
+
+                <div
+                    class="hero-decoration
+                           hero-decoration-one"
+                ></div>
+
+                <div
+                    class="hero-decoration
+                           hero-decoration-two"
+                ></div>
+
+
+                <div class="can can-back">
+
+                    <span class="can-logo">
+                        VITLS
+                    </span>
+
+                    <span class="can-small">
+                        VITAMIN DRINK
+                    </span>
+
+                    <div class="can-fruit">
+                        ●
+                    </div>
+
+                    <span class="can-flavor">
+                        BERRY RUSH
+                    </span>
+
+                </div>
+
+
+                <div class="can can-main">
+
+                    <span class="can-logo">
+                        VITLS
+                    </span>
+
+                    <span class="can-small">
+                        VITAMIN DRINK
+                    </span>
+
+                    <div class="can-fruit">
+                        ✦
+                    </div>
+
+                    <span class="can-flavor">
+                        TROPICAL MANGO
+                    </span>
+
+                </div>
+
+
+                <div class="hero-note">
+                    <span>✦</span>
+                    vitamins made simple
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             THIS IS VITLS
+        ====================================== -->
+
+        <section class="intro-section" id="vitls">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    THIS IS VITLS
+                </p>
+
+                <h2>
+                    A better way to make
+                    vitamins part of your day.
+                </h2>
+
+            </div>
+
+
+            <div class="intro-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-number">
+                        01
+                    </div>
+
+                    <div class="feature-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Your vitamins
+                    </h3>
+
+                    <p>
+                        Choose the vitamins that fit
+                        what you need today.
+                    </p>
+
+                </article>
+
+
+                <article
+                    class="feature-card feature-peach"
+                >
+
+                    <div class="feature-number">
+                        02
+                    </div>
+
+                    <div class="feature-icon">
+                        ♡
+                    </div>
+
+                    <h3>
+                        Your flavor
+                    </h3>
+
+                    <p>
+                        No boring pills. Pick a flavor
+                        you'll actually look forward to.
+                    </p>
+
+                </article>
+
+
+                <article
+                    class="feature-card feature-green"
+                >
+
+                    <div class="feature-number">
+                        03
+                    </div>
+
+                    <div class="feature-icon">
+                        ☺
+                    </div>
+
+                    <h3>
+                        Your way
+                    </h3>
+
+                    <p>
+                        VITLS fits into your day —
+                        not the other way around.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             FLAVORS
+        ====================================== -->
+
+        <section class="flavors-section">
+
+            <div class="flavors-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        FIND YOUR FLAVOR
+                    </p>
+
+                    <h2>
+                        Four flavors.<br>
+                        One VITLS feeling.
+                    </h2>
+
+                </div>
+
+                <p class="section-description">
+                    From tropical mango to fresh citrus.
+                    Pick the flavor that matches your mood.
+                </p>
+
+            </div>
+
+
+            <div class="flavor-grid">
+
+                <!-- MANGO -->
+
+                <article class="flavor-card mango">
+
+                    <div class="mini-can">
+                        <span>VITLS</span>
+                        <small>MANGO</small>
+                    </div>
+
+                    <div>
+
+                        <span class="flavor-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Tropical<br>
+                            Mango
+                        </h3>
+
+                        <p>
+                            Sweet · Tropical · Sunny
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BERRY -->
+
+                <article class="flavor-card berry">
+
+                    <div class="mini-can">
+                        <span>VITLS</span>
+                        <small>BERRY</small>
+                    </div>
+
+                    <div>
+
+                        <span class="flavor-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Berry<br>
+                            Rush
+                        </h3>
+
+                        <p>
+                            Fruity · Juicy · Bright
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CITRUS -->
+
+                <article class="flavor-card citrus">
+
+                    <div class="mini-can">
+                        <span>VITLS</span>
+                        <small>CITRUS</small>
+                    </div>
+
+                    <div>
+
+                        <span class="flavor-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Citrus<br>
+                            Fresh
+                        </h3>
+
+                        <p>
+                            Fresh · Light · Zesty
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BLUE -->
+
+                <article class="flavor-card blue">
+
+                    <div class="mini-can">
+                        <span>VITLS</span>
+                        <small>BLUE</small>
+                    </div>
+
+                    <div>
+
+                        <span class="flavor-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Blue<br>
+                            Fusion
+                        </h3>
+
+                        <p>
+                            Cool · Fruity · Smooth
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             VITAMINS
+        ====================================== -->
+
+        <section class="vitamins-section">
+
+            <div class="vitamin-intro">
+
+                <p class="eyebrow">
+                    THE ESSENTIALS
+                </p>
+
+                <h2>
+                    Meet the<br>
+                    main four.
+                </h2>
+
+                <p>
+                    Get to know the essentials.
+                    Tap a vitamin to learn what it does
+                    and where you can naturally find it.
+                </p>
+
+            </div>
+
+
+            <div class="vitamin-list">
+
+
+                <!-- VITAMIN C -->
+
+                <article class="vitamin-item">
+
+                    <button class="vitamin-row">
+
+                        <span class="vitamin-letter">
+                            C
+                        </span>
+
+                        <span class="vitamin-name">
+
+                            <strong>
+                                Vitamin C
+                            </strong>
+
+                            <small>
+                                Everyday support
+                            </small>
+
+                        </span>
+
+                        <span class="vitamin-toggle">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="vitamin-details">
+
+                        <div class="vitamin-details-inner">
+
+                            <div>
+
+                                <span class="detail-label">
+                                    WHAT IT DOES
+                                </span>
+
+                                <p>
+                                    Supports normal immune
+                                    function and collagen
+                                    formation.
+                                </p>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="detail-label">
+                                    COMMON SOURCES
+                                </span>
+
+                                <p>
+                                    Citrus fruits · Peppers ·
+                                    Strawberries · Broccoli
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- VITAMIN D -->
+
+                <article class="vitamin-item">
+
+                    <button class="vitamin-row">
+
+                        <span class="vitamin-letter">
+                            D
+                        </span>
+
+                        <span class="vitamin-name">
+
+                            <strong>
+                                Vitamin D
+                            </strong>
+
+                            <small>
+                                Sunshine essential
+                            </small>
+
+                        </span>
+
+                        <span class="vitamin-toggle">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="vitamin-details">
+
+                        <div class="vitamin-details-inner">
+
+                            <div>
+
+                                <span class="detail-label">
+                                    WHAT IT DOES
+                                </span>
+
+                                <p>
+                                    Supports normal bones,
+                                    muscles and immune
+                                    function.
+                                </p>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="detail-label">
+                                    COMMON SOURCES
+                                </span>
+
+                                <p>
+                                    Sunlight · Oily fish ·
+                                    Egg yolks · Fortified foods
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- B12 -->
+
+                <article class="vitamin-item">
+
+                    <button class="vitamin-row">
+
+                        <span class="vitamin-letter">
+                            B12
+                        </span>
+
+                        <span class="vitamin-name">
+
+                            <strong>
+                                Vitamin B12
+                            </strong>
+
+                            <small>
+                                Daily energy support
+                            </small>
+
+                        </span>
+
+                        <span class="vitamin-toggle">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="vitamin-details">
+
+                        <div class="vitamin-details-inner">
+
+                            <div>
+
+                                <span class="detail-label">
+                                    WHAT IT DOES
+                                </span>
+
+                                <p>
+                                    Supports normal red blood
+                                    cell formation and nervous
+                                    system function.
+                                </p>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="detail-label">
+                                    COMMON SOURCES
+                                </span>
+
+                                <p>
+                                    Meat · Fish · Eggs · Dairy ·
+                                    Fortified foods
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MAGNESIUM -->
+
+                <article class="vitamin-item">
+
+                    <button class="vitamin-row">
+
+                        <span class="vitamin-letter">
+                            Mg
+                        </span>
+
+                        <span class="vitamin-name">
+
+                            <strong>
+                                Magnesium
+                            </strong>
+
+                            <small>
+                                Everyday balance
+                            </small>
+
+                        </span>
+
+                        <span class="vitamin-toggle">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="vitamin-details">
+
+                        <div class="vitamin-details-inner">
+
+                            <div>
+
+                                <span class="detail-label">
+                                    WHAT IT DOES
+                                </span>
+
+                                <p>
+                                    Supports normal muscle
+                                    and nervous system function
+                                    and energy metabolism.
+                                </p>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="detail-label">
+                                    COMMON SOURCES
+                                </span>
+
+                                <p>
+                                    Nuts · Seeds · Whole grains ·
+                                    Legumes · Leafy greens
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             JOURNAL
+        ====================================== -->
+
+        <section class="journal-section">
+
+            <div class="journal-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        VITLS JOURNAL
+                    </p>
+
+                    <h2>
+                        A little more<br>
+                        than vitamins.
+                    </h2>
+
+                </div>
+
+
+                <a
+                    href="{{ url_for('journal') }}"
+                    class="text-link"
+                >
+                    View all articles →
+                </a>
+
+            </div>
+
+
+            <div class="articles-grid">
+
+
+                <!-- ARTICLE 1 -->
+
+                <a
+                    href="{{ url_for('vitamin_c') }}"
+                    class="article-card"
+                >
+
+                    <div
+                        class="article-image
+                               article-image-one"
+                    >
+
+                        <span>
+                            VITLS
+                        </span>
+
+                        <div class="article-circle">
+                            C
+                        </div>
+
+                    </div>
+
+
+                    <div class="article-content">
+
+                        <p class="article-category">
+                            VITAMINS · 5 MIN
+                        </p>
+
+                        <h3>
+                            Vitamin C: what do you
+                            really need to know?
+                        </h3>
+
+                        <span class="article-link">
+                            Read article →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- ARTICLE 2 -->
+
+                <a
+                    href="{{ url_for('wellness_routine') }}"
+                    class="article-card"
+                >
+
+                    <div
+                        class="article-image
+                               article-image-two"
+                    >
+
+                        <span>
+                            VITLS
+                        </span>
+
+                        <div class="article-sun">
+                            ☀
+                        </div>
+
+                    </div>
+
+
+                    <div class="article-content">
+
+                        <p class="article-category">
+                            LIFESTYLE · 4 MIN
+                        </p>
+
+                        <h3>
+                            How to build a simpler
+                            daily wellness routine
+                        </h3>
+
+                        <span class="article-link">
+                            Read article →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- ARTICLE 3 -->
+
+                <a
+                    href="{{ url_for('why_vitls') }}"
+                    class="article-card"
+                >
+
+                    <div
+                        class="article-image
+                               article-image-three"
+                    >
+
+                        <span>
+                            VITLS
+                        </span>
+
+                        <div class="article-mini-can">
+                            VITLS
+                        </div>
+
+                    </div>
+
+
+                    <div class="article-content">
+
+                        <p class="article-category">
+                            OUR WORLD · 3 MIN
+                        </p>
+
+                        <h3>
+                            Why we decided
+                            to create VITLS
+                        </h3>
+
+                        <span class="article-link">
+                            Read article →
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             ABOUT US
+        ====================================== -->
+
+        <div class="about-heading">
+
+            <p class="eyebrow">
+                GET TO KNOW US
+            </p>
+
+            <h2>
+                About VITLS.
+            </h2>
+
+        </div>
+        
+        <section class="about-section">
+
+
+            <div class="about-visual">
+
+                <span class="about-small">
+                    THE PEOPLE BEHIND VITLS
+                </span>
+
+                <div
+                    class="about-shape shape-one"
+                ></div>
+
+                <div
+                    class="about-shape shape-two"
+                ></div>
+
+                <div
+                    class="about-shape shape-three"
+                ></div>
+
+                <div class="about-center">
+                    VITLS
+                    <small>TEAM</small>
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="eyebrow">
+                    ABOUT US
+                </p>
+
+                <h2>
+                    Made by people
+                    who wanted vitamins
+                    to feel different.
+                </h2>
+
+                <p>
+                    VITLS started with a simple idea:
+                    to create a more modern, enjoyable
+                    and personal way to make vitamins
+                    part of everyday life.
+                </p>
+
+                <a
+                    href="{{ url_for('about') }}"
+                    class="button button-light"
+                >
+                    Our story
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             NEWSLETTER
+        ====================================== -->
+
+        <section class="newsletter">
+
+            <div>
+
+                <p class="eyebrow">
+                    STAY IN THE LOOP
+                </p>
+
+                <h2>
+                    A little VITLS<br>
+                    in your inbox.
+                </h2>
+
+            </div>
+
+
+            <div class="newsletter-right">
+
+                <p>
+                    News, stories and everything
+                    happening in the world of VITLS —
+                    straight to your inbox.
+                </p>
+
+
+                <form
+                    class="newsletter-form"
+                    id="newsletterForm"
+                >
+
+                    <input
+                        type="email"
+                        placeholder="Your email"
+                        aria-label="Your email"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        aria-label="Subscribe"
+                    >
+                        →
+                    </button>
+
+                </form>
+
+                <p
+                    class="form-message"
+                    id="formMessage"
+                ></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="footer" id="contact">
+
+        <div class="footer-main">
+
+            <div>
+
+                <a
+                    href="{{ url_for('home') }}"
+                    class="footer-logo"
+                >
+                    VITLS
+                </a>
+
+                <p class="footer-tagline">
+                    Your vitamins.<br>
+                    Your flavor. Your way.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <p>EXPLORE</p>
+
+                <a href="{{ url_for('home') }}">
+                    Home
+                </a>
+
+                <a href="#" class="eshop-link">
+                    E-shop
+                </a>
+
+                <a href="{{ url_for('about') }}">
+                    About us
+                </a>
+
+                <a href="{{ url_for('journal') }}">
+                    Journal
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <p>CONTACT</p>
+
+                <a href="mailto:hello@vitls.sk">
+                    hello@vitls.sk
+                </a>
+
+                <span>
+                    Slovakia
+                </span>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <p>FOLLOW</p>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    TikTok
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 VITLS. All rights reserved.
+            </span>
+
+            <div>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Cookies
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script
+        src="{{ url_for('static', filename='script.js') }}"
+    ></script>
+
+</body>
+</html>
