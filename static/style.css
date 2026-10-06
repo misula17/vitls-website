@@ -12,10 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#journal {
-    scroll-margin-top: 110px;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #fffaf6;
@@ -31,6 +27,13 @@ a {
 button,
 input {
     font: inherit;
+}
+
+#vitls,
+#journal,
+#about,
+#contact {
+    scroll-margin-top: 110px;
 }
 
 
@@ -72,6 +75,8 @@ input {
     font-weight: 700;
     color: #725e58;
     position: relative;
+
+    transition: color 0.2s ease;
 }
 
 .desktop-nav a:hover,
@@ -81,6 +86,7 @@ input {
 
 .desktop-nav a.active::after {
     content: "";
+
     position: absolute;
 
     width: 5px;
@@ -125,9 +131,12 @@ input {
 
 .menu-button span {
     display: block;
+
     width: 25px;
     height: 2px;
+
     margin: 6px 0;
+
     background: #171515;
 }
 
@@ -142,9 +151,11 @@ input {
 
 .eyebrow {
     color: #b85849;
+
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 2px;
+
     margin-bottom: 22px;
 }
 
@@ -157,6 +168,7 @@ input {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     gap: 28px;
 
     font-size: 14px;
@@ -174,14 +186,27 @@ input {
     background: #b95d50;
 }
 
+.button-light {
+    background: #fffaf6;
+    color: #171515;
+}
+
 .text-link {
     font-size: 14px;
     font-weight: 800;
+
     color: #725e58;
 
     display: inline-flex;
     align-items: center;
+
     gap: 10px;
+
+    transition: color 0.2s ease;
+}
+
+.text-link:hover {
+    color: #b95d50;
 }
 
 
@@ -196,6 +221,7 @@ input {
 
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
+
     align-items: center;
     gap: 40px;
 
@@ -204,6 +230,7 @@ input {
 
 .hero-content {
     max-width: 620px;
+
     position: relative;
     z-index: 5;
 }
@@ -334,9 +361,7 @@ input {
 .can-back {
     background: #e89aa8;
 
-    transform:
-        rotate(-10deg)
-        translate(-90px, 30px);
+    transform: rotate(-10deg) translate(-90px, 30px);
 
     z-index: 2;
 }
@@ -360,6 +385,7 @@ input {
 
 .can-flavor {
     position: absolute;
+
     bottom: 28px;
 
     font-size: 9px;
@@ -390,23 +416,14 @@ input {
 
 
 /* ========================================
-   INTRO
+   SHARED SECTION HEADINGS
 ======================================== */
-
-.intro-section {
-    padding: 120px 7vw;
-    background: #f7eee8;
-}
-
-.section-heading {
-    max-width: 850px;
-    margin-bottom: 60px;
-}
 
 .section-heading h2,
 .flavors-heading h2,
 .vitamin-intro h2,
 .journal-header h2,
+.about-heading h2,
 .about-content h2,
 .newsletter h2 {
     font-size: clamp(42px, 5vw, 72px);
@@ -414,199 +431,217 @@ input {
     letter-spacing: -4px;
 }
 
-.intro-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-}
-
-.feature-card {
-    min-height: 330px;
-
-    background: white;
-    border-radius: 28px;
-
-    padding: 28px;
-
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-    transition: 0.25s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-}
-
-.feature-peach {
-    background: #fde5d6;
-}
-
-.feature-green {
-    background: #e5eccd;
-}
-
-.feature-number {
-    position: absolute;
-    left: 28px;
-    top: 28px;
-
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.feature-icon {
-    position: absolute;
-    right: 28px;
-    top: 24px;
-
-    font-size: 34px;
-    color: #b95d50;
-}
-
-.feature-card h3 {
-    font-size: 29px;
-    letter-spacing: -1px;
-    margin-bottom: 12px;
-}
-
-.feature-card p {
-    color: #725e58;
-    line-height: 1.6;
-    max-width: 280px;
-}
 
 /* ========================================
-   HOW IT WORKS
+   HOW VITLS WORKS
 ======================================== */
 
-.how-it-works {
-    padding: 120px 7vw 140px;
+.vitls-process {
+    padding: 120px 7vw 130px;
+
     background: #f7eee8;
 }
 
-.how-heading {
+
+/* HEADER */
+
+.process-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 80px;
+
     margin-bottom: 90px;
 }
 
-.how-heading h2 {
-    font-size: clamp(48px, 5vw, 72px);
-    line-height: 0.98;
-    letter-spacing: -4px;
+.process-heading h2 {
+    max-width: 800px;
+
+    font-size: clamp(52px, 5.5vw, 82px);
+    line-height: 0.94;
+    letter-spacing: -5px;
+    font-weight: 800;
+}
+
+.process-heading h2 span {
+    color: #b95d50;
+}
+
+.process-intro {
+    max-width: 310px;
+
+    margin-bottom: 8px;
+
+    color: #725e58;
+
+    font-size: 16px;
+    line-height: 1.65;
 }
 
 
 /* STEPS */
 
-.steps {
+.process-steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     position: relative;
 }
 
 
-/* LINE CONNECTING STEPS */
+/* CONNECTING LINE */
 
-.steps::before {
+.process-steps::before {
     content: "";
+
     position: absolute;
 
-    top: 63px;
     left: 0;
     right: 0;
+    top: 91px;
 
-    height: 2px;
+    height: 1px;
 
-    background: #d8c8c1;
+    background: #d7c4bd;
 }
 
 
 /* SINGLE STEP */
 
-.step {
+.process-step {
     position: relative;
-    min-height: 270px;
+
+    min-height: 360px;
+
     padding-right: 60px;
 }
 
 
-/* NUMBER + DOT */
+/* NUMBER */
 
-.step-top {
-    position: relative;
-    z-index: 2;
-
-    height: 110px;
+.process-number {
+    height: 70px;
 
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
 }
 
-.step-number {
+.process-number span {
     font-size: 13px;
     font-weight: 900;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 
     color: #b95d50;
-
-    margin-bottom: 22px;
 }
 
-.step-dot {
-    width: 18px;
-    height: 18px;
+
+/* DOT */
+
+.process-marker {
+    position: relative;
+    z-index: 2;
+
+    width: 20px;
+    height: 20px;
+
+    margin-top: 12px;
 
     border-radius: 50%;
 
-    background: #b95d50;
-    border: 5px solid #f7eee8;
-
-    box-shadow: 0 0 0 2px #b95d50;
+    background: #f7eee8;
+    border: 2px solid #b95d50;
 
     transition:
         transform 0.25s ease,
         background 0.25s ease;
 }
 
+.process-marker::after {
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #b95d50;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
 
 /* CONTENT */
 
-.step-content {
-    padding-top: 30px;
+.process-content {
+    padding-top: 50px;
 }
 
-.step-content h3 {
-    font-size: 28px;
-    line-height: 1.1;
-    letter-spacing: -1px;
+.process-label {
+    display: block;
 
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+
+    color: #b95d50;
+
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.8px;
 }
 
-.step-content p {
-    max-width: 280px;
+.process-content h3 {
+    margin-bottom: 20px;
+
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+}
+
+.process-content p {
+    max-width: 290px;
 
     color: #725e58;
 
-    font-size: 15px;
-    line-height: 1.65;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 
-/* SMALL INTERACTION */
+/* STEP COLORS */
 
-.step:hover .step-dot {
-    transform: scale(1.35);
+.process-step-two .process-marker {
+    border-color: #e89aa8;
 }
 
-.step:hover h3 {
+.process-step-two .process-marker::after {
+    background: #e89aa8;
+}
+
+.process-step-three .process-marker {
+    border-color: #9caf67;
+}
+
+.process-step-three .process-marker::after {
+    background: #9caf67;
+}
+
+
+/* HOVER */
+
+.process-step:hover .process-marker {
+    transform: scale(1.25);
+    background: #fffaf6;
+}
+
+.process-step:hover h3 {
     color: #b95d50;
 }
+
 
 /* ========================================
    FLAVORS
@@ -622,6 +657,7 @@ input {
     justify-content: space-between;
 
     gap: 50px;
+
     margin-bottom: 60px;
 }
 
@@ -629,6 +665,7 @@ input {
     max-width: 370px;
 
     color: #725e58;
+
     line-height: 1.65;
 
     margin-bottom: 5px;
@@ -637,6 +674,7 @@ input {
 .flavor-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
     gap: 14px;
 }
 
@@ -644,6 +682,7 @@ input {
     min-height: 480px;
 
     border-radius: 28px;
+
     padding: 25px;
 
     display: flex;
@@ -706,6 +745,7 @@ input {
 
 .mini-can small {
     margin-top: 50px;
+
     font-size: 8px;
     font-weight: 800;
 }
@@ -745,6 +785,7 @@ input {
 
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
+
     gap: 100px;
 }
 
@@ -765,6 +806,7 @@ input {
     max-width: 370px;
 
     line-height: 1.7;
+
     color: #f6dcd6;
 }
 
@@ -795,6 +837,7 @@ input {
 
     display: grid;
     grid-template-columns: 90px 1fr 50px;
+
     align-items: center;
 
     text-align: left;
@@ -810,20 +853,15 @@ input {
     padding-left: 12px;
 }
 
-
-/* LETTER */
-
 .vitamin-letter {
     font-size: 25px;
     font-weight: 900;
 }
 
-
-/* NAME */
-
 .vitamin-name {
     display: flex;
     flex-direction: column;
+
     gap: 7px;
 }
 
@@ -886,6 +924,7 @@ input {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     gap: 55px;
 
     padding-left: 90px;
@@ -936,62 +975,13 @@ input {
 }
 
 
-/* MOBILE */
-
-@media (max-width: 1000px) {
-
-    .vitamins-section {
-        grid-template-columns: 1fr;
-        gap: 60px;
-    }
-
-    .vitamin-intro {
-        position: static;
-    }
-}
-
-
-@media (max-width: 650px) {
-
-    .vitamin-row {
-        min-height: 120px;
-
-        grid-template-columns: 65px 1fr 42px;
-    }
-
-    .vitamin-name strong {
-        font-size: 22px;
-    }
-
-    .vitamin-name small {
-        font-size: 12px;
-    }
-
-    .vitamin-toggle {
-        width: 34px;
-        height: 34px;
-    }
-
-    .vitamin-details-inner {
-        grid-template-columns: 1fr;
-
-        gap: 25px;
-
-        padding-left: 65px;
-        padding-right: 15px;
-    }
-
-    .vitamin-item.open .vitamin-details-inner {
-        padding-bottom: 35px;
-    }
-}
-
 /* ========================================
    JOURNAL
 ======================================== */
 
 .journal-section {
     padding: 120px 7vw;
+
     background: #fffaf6;
 }
 
@@ -1001,16 +991,20 @@ input {
     justify-content: space-between;
 
     gap: 40px;
+
     margin-bottom: 55px;
 }
 
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     gap: 20px;
 }
 
 .article-card {
+    display: block;
+
     overflow: hidden;
 
     border-radius: 26px;
@@ -1023,6 +1017,7 @@ input {
 
 .article-card:hover {
     transform: translateY(-5px);
+
     border-color: #d8bbb2;
 }
 
@@ -1132,7 +1127,8 @@ input {
     margin-bottom: 28px;
 }
 
-.article-content a {
+.article-content a,
+.article-link {
     color: #725e58;
 
     font-size: 13px;
@@ -1160,6 +1156,7 @@ input {
     min-height: 600px;
 
     border-radius: 35px;
+
     overflow: hidden;
 
     display: grid;
@@ -1219,6 +1216,7 @@ input {
 
 .about-shape {
     position: absolute;
+
     border-radius: 50%;
 }
 
@@ -1279,11 +1277,6 @@ input {
     line-height: 1.7;
 }
 
-.button-light {
-    background: #fffaf6;
-    color: #171515;
-}
-
 
 /* ========================================
    NEWSLETTER
@@ -1296,6 +1289,7 @@ input {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     gap: 100px;
 
     align-items: end;
@@ -1307,6 +1301,7 @@ input {
 
 .newsletter-right > p {
     color: #725e58;
+
     line-height: 1.6;
 
     margin-bottom: 28px;
@@ -1348,10 +1343,17 @@ input {
     cursor: pointer;
 
     font-size: 20px;
+
+    transition: transform 0.2s ease;
+}
+
+.newsletter-form button:hover {
+    transform: translateX(3px);
 }
 
 .form-message {
     margin-top: 15px;
+
     font-size: 13px;
 }
 
@@ -1370,6 +1372,7 @@ input {
 .footer-main {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
+
     gap: 60px;
 
     padding-bottom: 80px;
@@ -1409,6 +1412,7 @@ input {
 .footer-column a,
 .footer-column span {
     color: #cfc3be;
+
     font-size: 14px;
 }
 
@@ -1431,6 +1435,7 @@ input {
 
 .footer-bottom div {
     display: flex;
+
     gap: 25px;
 }
 
@@ -1464,6 +1469,7 @@ input {
         border-bottom: 1px solid #eee2dc;
 
         flex-direction: column;
+
         gap: 20px;
 
         z-index: 90;
@@ -1480,6 +1486,7 @@ input {
 
     .hero {
         grid-template-columns: 1fr;
+
         padding-top: 65px;
     }
 
@@ -1487,13 +1494,48 @@ input {
         min-height: 550px;
     }
 
-    .intro-grid {
+
+    /* HOW IT WORKS */
+
+    .process-heading {
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .process-steps {
         grid-template-columns: 1fr;
     }
 
-    .feature-card {
-        min-height: 270px;
+    .process-steps::before {
+        display: none;
     }
+
+    .process-step {
+        min-height: auto;
+
+        padding: 35px 0;
+
+        border-top: 1px solid #d7c4bd;
+    }
+
+    .process-number {
+        height: auto;
+
+        margin-bottom: 15px;
+    }
+
+    .process-marker {
+        display: none;
+    }
+
+    .process-content {
+        padding-top: 0;
+    }
+
+
+    /* OTHER SECTIONS */
 
     .flavor-grid {
         grid-template-columns: 1fr 1fr;
@@ -1501,6 +1543,7 @@ input {
 
     .vitamins-section {
         grid-template-columns: 1fr;
+
         gap: 60px;
     }
 
@@ -1526,6 +1569,7 @@ input {
 
     .newsletter {
         grid-template-columns: 1fr;
+
         gap: 50px;
     }
 
@@ -1539,6 +1583,7 @@ input {
 
     .site-header {
         height: 72px;
+
         padding: 0 22px;
     }
 
@@ -1552,11 +1597,13 @@ input {
 
     .hero {
         padding: 55px 22px 70px;
+
         gap: 50px;
     }
 
     .hero h1 {
         font-size: 55px;
+
         letter-spacing: -3.5px;
     }
 
@@ -1567,11 +1614,13 @@ input {
     .hero-actions {
         align-items: flex-start;
         flex-direction: column;
+
         gap: 22px;
     }
 
     .hero-visual {
         min-height: 430px;
+
         border-radius: 28px;
     }
 
@@ -1581,15 +1630,11 @@ input {
     }
 
     .can-main {
-        transform:
-            rotate(7deg)
-            translateX(50px);
+        transform: rotate(7deg) translateX(50px);
     }
 
     .can-back {
-        transform:
-            rotate(-10deg)
-            translate(-55px, 25px);
+        transform: rotate(-10deg) translate(-55px, 25px);
     }
 
     .can-logo {
@@ -1598,10 +1643,30 @@ input {
 
     .can-fruit {
         margin-top: 45px;
+
         font-size: 35px;
     }
 
-    .intro-section,
+
+    /* HOW IT WORKS */
+
+    .vitls-process {
+        padding: 80px 22px;
+    }
+
+    .process-heading {
+        margin-bottom: 50px;
+    }
+
+    .process-heading h2 {
+        font-size: 48px;
+
+        letter-spacing: -3px;
+    }
+
+
+    /* OTHER SECTIONS */
+
     .flavors-section,
     .vitamins-section,
     .journal-section,
@@ -1613,9 +1678,11 @@ input {
     .flavors-heading h2,
     .vitamin-intro h2,
     .journal-header h2,
+    .about-heading h2,
     .about-content h2,
     .newsletter h2 {
         font-size: 43px;
+
         letter-spacing: -2.5px;
     }
 
@@ -1634,11 +1701,35 @@ input {
     }
 
     .vitamin-row {
-        grid-template-columns: 65px 1fr 30px;
+        min-height: 120px;
+
+        grid-template-columns: 65px 1fr 42px;
     }
 
-    .vitamin-row h3 {
-        font-size: 23px;
+    .vitamin-name strong {
+        font-size: 22px;
+    }
+
+    .vitamin-name small {
+        font-size: 12px;
+    }
+
+    .vitamin-toggle {
+        width: 34px;
+        height: 34px;
+    }
+
+    .vitamin-details-inner {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding-left: 65px;
+        padding-right: 15px;
+    }
+
+    .vitamin-item.open .vitamin-details-inner {
+        padding-bottom: 35px;
     }
 
     .articles-grid {
@@ -1649,8 +1740,13 @@ input {
         grid-column: auto;
     }
 
+    .about-heading {
+        margin: 0 22px 40px;
+    }
+
     .about-section {
         margin: 0 22px 80px;
+
         border-radius: 28px;
     }
 
@@ -1680,15 +1776,13 @@ input {
 
     .footer-main > div:first-child {
         grid-column: span 2;
+
         margin-bottom: 20px;
     }
 
     .footer-bottom {
         flex-direction: column;
+
         gap: 15px;
     }
-}
-
-#about {
-    scroll-margin-top: 110px;
 }
