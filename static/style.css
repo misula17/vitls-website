@@ -642,6 +642,79 @@ input {
     color: #b95d50;
 }
 
+/* ========================================
+   PROCESS LINKS
+======================================== */
+
+.process-step {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.process-step {
+    cursor: pointer;
+}
+
+.process-content h3 {
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.process-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 28px;
+
+    color: #b95d50;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+
+    opacity: 0.7;
+
+    transition:
+        opacity 0.25s ease,
+        gap 0.25s ease;
+}
+
+.process-link span {
+    font-size: 15px;
+}
+
+a.process-step:hover .process-link {
+    opacity: 1;
+    gap: 13px;
+}
+
+a.process-step:hover .process-content h3 {
+    transform: translateY(-2px);
+}
+
+.process-coming {
+    display: inline-block;
+
+    margin-top: 28px;
+
+    color: #8b7169;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+
+    opacity: 0.65;
+}
+
+
+/* SCROLL POSITION */
+
+#flavors,
+#vitamins {
+    scroll-margin-top: 50px;
+}
 
 /* ========================================
    FLAVORS
