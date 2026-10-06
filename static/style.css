@@ -480,6 +480,133 @@ input {
     max-width: 280px;
 }
 
+/* ========================================
+   HOW IT WORKS
+======================================== */
+
+.how-it-works {
+    padding: 120px 7vw 140px;
+    background: #f7eee8;
+}
+
+.how-heading {
+    margin-bottom: 90px;
+}
+
+.how-heading h2 {
+    font-size: clamp(48px, 5vw, 72px);
+    line-height: 0.98;
+    letter-spacing: -4px;
+}
+
+
+/* STEPS */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+
+
+/* LINE CONNECTING STEPS */
+
+.steps::before {
+    content: "";
+    position: absolute;
+
+    top: 63px;
+    left: 0;
+    right: 0;
+
+    height: 2px;
+
+    background: #d8c8c1;
+}
+
+
+/* SINGLE STEP */
+
+.step {
+    position: relative;
+    min-height: 270px;
+    padding-right: 60px;
+}
+
+
+/* NUMBER + DOT */
+
+.step-top {
+    position: relative;
+    z-index: 2;
+
+    height: 110px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.step-number {
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 1px;
+
+    color: #b95d50;
+
+    margin-bottom: 22px;
+}
+
+.step-dot {
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: #b95d50;
+    border: 5px solid #f7eee8;
+
+    box-shadow: 0 0 0 2px #b95d50;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* CONTENT */
+
+.step-content {
+    padding-top: 30px;
+}
+
+.step-content h3 {
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+
+    margin-bottom: 15px;
+}
+
+.step-content p {
+    max-width: 280px;
+
+    color: #725e58;
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* SMALL INTERACTION */
+
+.step:hover .step-dot {
+    transform: scale(1.35);
+}
+
+.step:hover h3 {
+    color: #b95d50;
+}
 
 /* ========================================
    FLAVORS
