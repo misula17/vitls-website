@@ -1859,3 +1859,1804 @@ a.process-step:hover .process-content h3 {
         gap: 15px;
     }
 }
+
+/* =====================================
+   VITLS JOURNAL – ARTICLE PAGE
+====================================== */
+
+.vitls-article {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 45px 30px 80px;
+    color: #211917;
+}
+
+/* BACK LINK */
+
+.journal-back {
+    display: inline-block;
+    margin: 0 0 28px;
+    color: #725e58;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.journal-back:hover {
+    color: #b95d50;
+}
+
+/* ARTICLE HERO */
+
+.journal-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 380px;
+    padding: 65px;
+    background: #fce5d5;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.journal-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+    width: 72%;
+}
+
+.journal-hero .eyebrow {
+    color: #b95d50;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.journal-hero h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    margin: 0 0 24px;
+    font-weight: 700;
+}
+
+.journal-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #725e58;
+    max-width: 440px;
+}
+
+.journal-reading-time {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 17px;
+    border: 1px solid #d9b5a5;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #b95d50;
+}
+
+/* BIG VITAMIN C CIRCLE */
+
+.journal-vitamin-circle {
+    position: absolute;
+    right: -45px;
+    bottom: -65px;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: #b95d50;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 190px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+/* ARTICLE BODY */
+
+.journal-body {
+    max-width: 780px;
+    margin: 65px auto;
+}
+
+.journal-body p {
+    font-size: 17px;
+    line-height: 1.85;
+    color: #725e58;
+    margin: 0 0 20px;
+}
+
+.journal-body .journal-lead {
+    font-size: 22px;
+    line-height: 1.65;
+    color: #211917;
+    font-weight: 500;
+}
+
+/* ARTICLE CHAPTERS */
+
+.journal-chapter {
+    margin-top: 50px;
+    padding-top: 35px;
+    border-top: 1px solid #eadbd3;
+}
+
+.journal-chapter-number {
+    display: block;
+    color: #b95d50;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.journal-chapter h2 {
+    font-size: clamp(26px, 3vw, 34px);
+    line-height: 1.25;
+    letter-spacing: -0.8px;
+    margin: 0 0 22px;
+    color: #211917;
+}
+
+/* BENEFIT CARDS */
+
+.journal-benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.journal-benefit {
+    background: #f7eee8;
+    border: 1px solid #eadbd3;
+    border-radius: 22px;
+    padding: 26px 20px;
+    transition: transform 0.25s ease;
+}
+
+.journal-benefit:hover {
+    transform: translateY(-5px);
+}
+
+.journal-benefit > span {
+    display: block;
+    font-size: 32px;
+    color: #b95d50;
+    margin-bottom: 18px;
+}
+
+.journal-benefit h3 {
+    font-size: 17px;
+    margin: 0 0 10px;
+}
+
+.journal-benefit p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* DAILY REFERENCE VALUE */
+
+.journal-stat {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #fce5d5;
+    padding: 30px 35px;
+    border-radius: 24px;
+    margin: 28px 0;
+}
+
+.journal-stat strong {
+    color: #b95d50;
+    font-size: 56px;
+    letter-spacing: -2px;
+    white-space: nowrap;
+}
+
+.journal-stat span {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #725e58;
+}
+
+/* FOOD CARDS */
+
+.journal-foods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.journal-foods > div {
+    padding: 24px 10px;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.journal-foods > div:nth-child(1) {
+    background: #fce5d5;
+}
+
+.journal-foods > div:nth-child(2) {
+    background: #e5ead8;
+}
+
+.journal-foods > div:nth-child(3) {
+    background: #f5dce1;
+}
+
+.journal-foods > div:nth-child(4) {
+    background: #e0e9d9;
+}
+
+.journal-foods span {
+    display: block;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.journal-foods p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* GOOD TO KNOW BOX */
+
+.journal-highlight {
+    background: #f7eee8;
+    border-left: 4px solid #b95d50;
+    border-radius: 0 24px 24px 0;
+    padding: 32px;
+    margin: 25px 0;
+}
+
+.journal-highlight .eyebrow {
+    color: #b95d50;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.journal-highlight h3 {
+    color: #b95d50;
+    font-size: 27px;
+    margin: 15px 0;
+}
+
+.journal-highlight p {
+    margin: 0;
+}
+
+/* ARTICLE SIGNATURE */
+
+.journal-signature {
+    text-align: center;
+    padding: 50px 25px;
+    margin: 45px 0 30px;
+    background: #f7eee8;
+    border-radius: 28px;
+}
+
+.journal-signature h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.25;
+    letter-spacing: -1px;
+    color: #b95d50;
+    margin: 0 0 20px;
+}
+
+.journal-signature p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.journal-body .journal-source {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #8d7b74;
+}
+
+.journal-source a {
+    color: #b95d50;
+    text-decoration: underline;
+}
+
+/* E-SHOP BANNER */
+
+.journal-shop-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 45px 50px;
+    background: #fce5d5;
+    border-radius: 28px;
+    margin-bottom: 35px;
+}
+
+.journal-shop-banner .eyebrow {
+    color: #b95d50;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.journal-shop-banner h2 {
+    font-size: 36px;
+    letter-spacing: -1px;
+    margin: 12px 0;
+}
+
+.journal-shop-banner p {
+    color: #725e58;
+}
+
+.journal-shop-banner .button {
+    flex-shrink: 0;
+}
+
+/* =====================================
+   ARTICLE – MOBILE RESPONSIVE
+====================================== */
+
+@media (max-width: 768px) {
+
+    .vitls-article {
+        padding: 25px 20px 50px;
+    }
+
+    .journal-hero {
+        padding: 35px 25px 180px;
+        min-height: 0;
+        border-radius: 24px;
+    }
+
+    .journal-hero-content {
+        width: 100%;
+    }
+
+    .journal-hero h1 {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .journal-subtitle {
+        font-size: 16px;
+    }
+
+    .journal-vitamin-circle {
+        width: 200px;
+        height: 200px;
+        right: -25px;
+        bottom: -35px;
+        font-size: 115px;
+    }
+
+    .journal-body {
+        margin: 40px auto;
+    }
+
+    .journal-body p {
+        font-size: 16px;
+    }
+
+    .journal-body .journal-lead {
+        font-size: 19px;
+    }
+
+    .journal-chapter {
+        margin-top: 35px;
+        padding-top: 25px;
+    }
+
+    .journal-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .journal-foods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .journal-stat {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 25px;
+    }
+
+    .journal-stat strong {
+        font-size: 48px;
+    }
+
+    .journal-highlight {
+        padding: 25px;
+    }
+
+    .journal-shop-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 25px;
+    }
+
+    .journal-shop-banner h2 {
+        font-size: 30px;
+    }
+}
+
+/* =====================================
+   VITLS JOURNAL – WELLNESS ARTICLE
+====================================== */
+
+.wellness-article .journal-hero {
+    background: #f9edce;
+}
+
+.wellness-article .journal-vitamin-circle {
+    background: #d9ad55;
+    color: #fffaf6;
+    font-size: 210px;
+}
+
+.wellness-article .journal-hero .eyebrow,
+.wellness-article .journal-reading-time,
+.wellness-article .journal-chapter-number,
+.wellness-article .journal-benefit > span,
+.wellness-article .journal-highlight .eyebrow,
+.wellness-article .journal-highlight h3,
+.wellness-article .journal-stat strong,
+.wellness-article .journal-signature h2,
+.wellness-article .journal-shop-banner .eyebrow {
+    color: #997126;
+}
+
+.wellness-article .journal-reading-time {
+    border-color: #dfc58d;
+}
+
+.wellness-article .journal-benefit {
+    background: #fbf3df;
+    border-color: #ecdfbf;
+}
+
+.wellness-article .journal-highlight {
+    background: #fbf3df;
+    border-left-color: #d9ad55;
+}
+
+.wellness-article .journal-stat {
+    background: #f9edce;
+}
+
+.wellness-article .journal-signature {
+    background: #fbf3df;
+}
+
+.wellness-article .journal-shop-banner {
+    background: #f9edce;
+}
+
+@media (max-width: 768px) {
+
+    .wellness-article .journal-vitamin-circle {
+        font-size: 120px;
+    }
+
+}
+
+/* =====================================
+   VITLS JOURNAL – OUR STORY ARTICLE
+====================================== */
+
+.story-article .journal-hero {
+    background: #f5dce1;
+}
+
+.story-article .journal-hero .eyebrow,
+.story-article .journal-reading-time,
+.story-article .journal-chapter-number,
+.story-article .journal-benefit > span,
+.story-article .journal-highlight .eyebrow,
+.story-article .journal-highlight h3,
+.story-article .journal-signature h2,
+.story-article .journal-shop-banner .eyebrow {
+    color: #a64d68;
+}
+
+.story-article .journal-reading-time {
+    border-color: #d9a6b5;
+}
+
+.story-article .journal-benefit {
+    background: #faedf0;
+    border-color: #eed5dd;
+}
+
+.story-article .journal-highlight {
+    background: #faedf0;
+    border-left-color: #a64d68;
+}
+
+.story-article .journal-signature {
+    background: #faedf0;
+}
+
+.story-article .journal-shop-banner {
+    background: #f5dce1;
+}
+
+/* PRODUCT VISUAL */
+
+.journal-story-visual {
+    position: absolute;
+    right: -45px;
+    bottom: -65px;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: #d68da4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.journal-story-can {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 245px;
+    background: linear-gradient(
+        90deg,
+        #ad526e,
+        #e5a4b7 35%,
+        #d98ba3 75%,
+        #b65c77
+    );
+    border-radius: 25px 25px 20px 20px;
+    color: #ffffff;
+    transform: translate(-15px, -35px) rotate(12deg);
+    box-shadow: 15px 20px 30px rgba(100, 40, 60, 0.18);
+}
+
+.journal-story-can::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 7px;
+    right: 7px;
+    height: 14px;
+    background: #ded8d9;
+    border-radius: 50%;
+    border: 2px solid #b9b3b5;
+}
+
+.journal-story-can::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    height: 6px;
+    background: #ded8d9;
+    border-radius: 50%;
+}
+
+.story-can-logo {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.story-can-small {
+    font-size: 8px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.story-can-symbol {
+    font-size: 65px;
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.story-can-flavor {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/* FLAVOR COLORS */
+
+.story-article .journal-foods > div:nth-child(1) {
+    background: #f9edce;
+}
+
+.story-article .journal-foods > div:nth-child(2) {
+    background: #f5dce1;
+}
+
+.story-article .journal-foods > div:nth-child(3) {
+    background: #e5ead8;
+}
+
+.story-article .journal-foods > div:nth-child(4) {
+    background: #dfe7f5;
+}
+
+.story-article .journal-foods p {
+    font-size: 13px;
+}
+
+.story-article .story-flavor-note {
+    text-align: center;
+    color: #a64d68;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .story-article .journal-hero {
+        padding-bottom: 220px;
+    }
+
+    .journal-story-visual {
+        width: 230px;
+        height: 230px;
+        right: -25px;
+        bottom: -35px;
+    }
+
+    .journal-story-can {
+        transform: translate(-10px, -15px)
+                   rotate(12deg) scale(0.65);
+    }
+
+}
+
+/* =====================================
+   VITLS – ABOUT US PAGE
+====================================== */
+
+.vitls-about-page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 45px 30px 80px;
+    color: #211917;
+}
+
+.vitls-about-page .eyebrow {
+    color: #b95d50;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* HERO */
+
+.about-page-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    min-height: 440px;
+    padding: 60px;
+    background: #f7eee8;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.about-page-hero h1 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.05;
+    letter-spacing: -2.5px;
+    margin: 0 0 25px;
+}
+
+.about-page-hero-content > p:not(.eyebrow) {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #725e58;
+    margin-bottom: 30px;
+}
+
+/* COLORFUL CANS */
+
+.about-page-cans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 30px 0;
+}
+
+.about-page-can {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 205px;
+    border-radius: 20px 20px 16px 16px;
+    color: white;
+    box-shadow: 8px 15px 25px rgba(80, 50, 40, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.about-page-can::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 6px;
+    right: 6px;
+    height: 11px;
+    background: #ded8d9;
+    border: 1px solid #b9b3b5;
+    border-radius: 50%;
+}
+
+.about-page-can::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    right: 6px;
+    height: 5px;
+    background: #ded8d9;
+    border-radius: 50%;
+}
+
+.about-page-can strong {
+    font-size: 27px;
+    letter-spacing: -1px;
+}
+
+.about-page-can small {
+    font-size: 7px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.about-page-can span {
+    font-size: 48px;
+    margin-top: 15px;
+}
+
+.about-page-can.can-yellow {
+    background: linear-gradient(90deg, #c99b49, #e8bc69, #d6a652);
+    transform: rotate(-12deg);
+}
+
+.about-page-can.can-pink {
+    background: linear-gradient(90deg, #b65c77, #e5a4b7, #c87a94);
+    transform: translateY(-15px) rotate(-4deg);
+}
+
+.about-page-can.can-green {
+    background: linear-gradient(90deg, #849b64, #b6ca9d, #94ad76);
+    transform: translateY(-15px) rotate(4deg);
+}
+
+.about-page-can.can-blue {
+    background: linear-gradient(90deg, #6c8eaf, #a5bfd9, #7899bd);
+    transform: rotate(12deg);
+}
+
+.about-page-can:hover {
+    transform: translateY(-25px) rotate(0);
+}
+
+/* OUR STORY */
+
+.about-page-story {
+    display: grid;
+    grid-template-columns: 0.85fr 1fr;
+    align-items: center;
+    gap: 70px;
+    margin: 100px 0;
+    scroll-margin-top: 120px;
+}
+
+.about-page-story-visual {
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f5dce1;
+    border-radius: 28px;
+    color: #a64d68;
+    overflow: hidden;
+}
+
+.about-page-story-visual > span:first-child {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.about-page-story-visual strong {
+    font-size: clamp(65px, 9vw, 110px);
+    letter-spacing: -6px;
+    line-height: 1.2;
+}
+
+.about-page-story-visual p {
+    font-size: 14px;
+}
+
+.about-story-decoration {
+    position: absolute;
+    right: -25px;
+    bottom: -65px;
+    font-size: 250px;
+    line-height: 1;
+    opacity: 0.12;
+}
+
+.about-page-story-content h2 {
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin-bottom: 25px;
+}
+
+.about-page-story-content > p:not(.eyebrow) {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #725e58;
+    margin-bottom: 18px;
+}
+
+.about-page-text-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #b95d50;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.about-page-text-link:hover {
+    text-decoration: underline;
+}
+
+/* MISSION */
+
+.about-page-mission {
+    text-align: center;
+    max-width: 760px;
+    margin: 90px auto 40px;
+}
+
+.about-page-mission h2,
+.about-section-heading h2 {
+    font-size: clamp(34px, 4vw, 48px);
+    letter-spacing: -1.5px;
+    margin: 0 0 20px;
+}
+
+.about-page-mission > p:not(.eyebrow),
+.about-section-heading > p:not(.eyebrow) {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #725e58;
+}
+
+/* VALUES */
+
+.about-page-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.about-value-card {
+    border-radius: 26px;
+    padding: 35px 28px;
+    transition: transform 0.25s ease;
+}
+
+.about-value-card:hover {
+    transform: translateY(-6px);
+}
+
+.about-value-card > span {
+    display: block;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.about-value-card h3 {
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    margin: 0 0 15px;
+}
+
+.about-value-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #725e58;
+}
+
+.value-peach {
+    background: #fce5d5;
+}
+
+.value-peach > span {
+    color: #b95d50;
+}
+
+.value-pink {
+    background: #f5dce1;
+}
+
+.value-pink > span {
+    color: #a64d68;
+}
+
+.value-green {
+    background: #e5ead8;
+}
+
+.value-green > span {
+    color: #728653;
+}
+
+/* DIGITAL EXPERIENCE */
+
+.about-page-digital {
+    margin: 90px 0;
+}
+
+.about-section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.about-digital-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.about-digital-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #eadbd3;
+    background: #fffaf6;
+    border-radius: 24px;
+    transition: transform 0.25s ease;
+}
+
+.about-digital-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-digital-card > span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #b95d50;
+    margin-bottom: 25px;
+}
+
+.about-digital-card h3 {
+    font-size: 23px;
+    margin: 0 0 15px;
+}
+
+.about-digital-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #725e58;
+    margin-bottom: 25px;
+}
+
+.about-digital-card a {
+    margin-top: auto;
+    color: #b95d50;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.about-digital-card a:hover {
+    text-decoration: underline;
+}
+
+/* OUR TEAM */
+
+.about-page-team {
+    margin: 100px 0;
+}
+
+.about-team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.about-team-card {
+    text-align: center;
+    padding: 35px 15px;
+    border-radius: 26px;
+    transition: transform 0.25s ease;
+}
+
+.about-team-card:hover {
+    transform: translateY(-6px);
+}
+
+.about-team-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.55);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 auto 25px;
+}
+
+.about-team-card h3 {
+    color: #211917;
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.about-team-card p {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.team-yellow {
+    background: #f9edce;
+    color: #997126;
+}
+
+.team-green {
+    background: #e5ead8;
+    color: #728653;
+}
+
+.team-pink {
+    background: #f5dce1;
+    color: #a64d68;
+}
+
+.team-blue {
+    background: #dfe7f5;
+    color: #607fa6;
+}
+
+.about-team-description {
+    max-width: 700px;
+    margin: 35px auto 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #725e58;
+}
+
+/* BRAND SIGNATURE */
+
+.about-page-signature {
+    text-align: center;
+    background: #fce5d5;
+    padding: 65px 30px;
+    border-radius: 32px;
+    margin: 70px 0;
+}
+
+.about-page-signature h2 {
+    font-size: clamp(40px, 6vw, 68px);
+    letter-spacing: -2px;
+    line-height: 1.12;
+    color: #b95d50;
+    margin: 20px 0;
+}
+
+.about-page-signature > p:not(.eyebrow) {
+    color: #725e58;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/* ACADEMIC DISCLAIMER */
+
+.about-academic-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    background: #f7eee8;
+    border: 1px solid #eadbd3;
+    border-radius: 24px;
+    padding: 35px;
+    margin-top: 60px;
+}
+
+.academic-notice-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background: #fffaf6;
+    border-radius: 18px;
+    font-size: 30px;
+}
+
+.about-academic-notice h2 {
+    font-size: 26px;
+    margin: 0 0 20px;
+    letter-spacing: -0.5px;
+}
+
+.about-academic-notice p:not(.eyebrow) {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #725e58;
+    margin-bottom: 15px;
+}
+
+.about-academic-notice small {
+    display: block;
+    font-size: 12px;
+    color: #8d7b74;
+    margin-top: 25px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .vitls-about-page {
+        padding: 25px 20px 50px;
+    }
+
+    .about-page-hero {
+        grid-template-columns: 1fr;
+        padding: 35px 25px;
+        gap: 20px;
+        border-radius: 24px;
+    }
+
+    .about-page-hero h1 {
+        font-size: 44px;
+        letter-spacing: -1.5px;
+    }
+
+    .about-page-cans {
+        gap: 5px;
+    }
+
+    .about-page-can {
+        width: 65px;
+        height: 145px;
+    }
+
+    .about-page-can strong {
+        font-size: 19px;
+    }
+
+    .about-page-can small {
+        font-size: 5px;
+        letter-spacing: 0.5px;
+    }
+
+    .about-page-can span {
+        font-size: 35px;
+    }
+
+    .about-page-story {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 60px 0;
+    }
+
+    .about-page-story-visual {
+        min-height: 280px;
+    }
+
+    .about-page-values,
+    .about-digital-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .about-team-card {
+        padding: 25px 10px;
+    }
+
+    .about-team-avatar {
+        width: 75px;
+        height: 75px;
+        font-size: 26px;
+    }
+
+    .about-team-card h3 {
+        font-size: 15px;
+    }
+
+    .about-team-card p {
+        font-size: 9px;
+        letter-spacing: 0.5px;
+    }
+
+    .about-page-mission,
+    .about-page-digital,
+    .about-page-team {
+        margin: 60px 0;
+    }
+
+    .about-page-values {
+        margin-bottom: 60px;
+    }
+
+    .about-page-signature {
+        padding: 45px 20px;
+    }
+
+    .about-academic-notice {
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+    }
+
+}
+
+/* =====================================
+   VITLS – JOURNAL PAGE
+====================================== */
+
+.vitls-journal-page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 45px 30px 80px;
+    color: #211917;
+}
+
+.vitls-journal-page .eyebrow {
+    color: #b95d50;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* JOURNAL HERO */
+
+.journal-page-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 380px;
+    padding: 65px 40px;
+    background: #f7eee8;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.journal-page-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+}
+
+.journal-page-hero h1 {
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.1;
+    letter-spacing: -3px;
+    margin: 0 0 25px;
+}
+
+.journal-page-hero-content > p:not(.eyebrow) {
+    max-width: 570px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #725e58;
+}
+
+.journal-page-tag {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid #d9b5a5;
+    border-radius: 30px;
+    color: #b95d50;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.journal-hero-decoration {
+    position: absolute;
+    font-size: 280px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.decoration-left {
+    left: -70px;
+    bottom: -75px;
+    color: #e6c2af;
+    opacity: 0.55;
+}
+
+.decoration-right {
+    right: -55px;
+    top: -65px;
+    color: #e4b5c2;
+    opacity: 0.4;
+}
+
+/* ARTICLES HEADING */
+
+.journal-page-articles {
+    margin: 80px 0;
+}
+
+.journal-page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.journal-page-heading h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    letter-spacing: -1.5px;
+    margin: 0;
+}
+
+.journal-page-heading > p {
+    max-width: 250px;
+    color: #725e58;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* FILTERS */
+
+.journal-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eadbd3;
+}
+
+.journal-filter {
+    border: 1px solid #eadbd3;
+    background: #fffaf6;
+    color: #725e58;
+    border-radius: 30px;
+    padding: 12px 22px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.journal-filter:hover {
+    background: #f7eee8;
+    color: #b95d50;
+}
+
+.journal-filter.active {
+    background: #b95d50;
+    border-color: #b95d50;
+    color: white;
+}
+
+.journal-article-count {
+    color: #8d7b74;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 25px 0;
+}
+
+/* ARTICLE GRID */
+
+.journal-page-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.journal-page-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eadbd3;
+    border-radius: 26px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #211917;
+    background: #fffaf6;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.journal-page-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(80, 50, 40, 0.08);
+}
+
+.journal-page-card[hidden] {
+    display: none;
+}
+
+/* ARTICLE VISUALS */
+
+.journal-card-visual {
+    position: relative;
+    height: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.journal-card-brand {
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.journal-card-visual-label {
+    position: absolute;
+    bottom: 18px;
+    left: 22px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.journal-card-peach {
+    background: #fce5d5;
+    color: #b95d50;
+}
+
+.journal-card-yellow {
+    background: #f9edce;
+    color: #997126;
+}
+
+.journal-card-pink {
+    background: #f5dce1;
+    color: #a64d68;
+}
+
+.journal-card-circle {
+    width: 135px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 85px;
+    font-weight: 800;
+    line-height: 1;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.journal-card-peach .journal-card-circle {
+    background: #b95d50;
+}
+
+.journal-card-yellow .journal-card-circle {
+    background: #d9ad55;
+    font-size: 95px;
+}
+
+.journal-page-card:hover .journal-card-circle {
+    transform: scale(1.08) rotate(-5deg);
+}
+
+/* MINI CAN */
+
+.journal-card-mini-can {
+    position: relative;
+    width: 85px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        90deg,
+        #ad526e,
+        #e5a4b7 40%,
+        #d98ba3 75%,
+        #b65c77
+    );
+    border-radius: 16px 16px 12px 12px;
+    color: white;
+    transform: rotate(12deg);
+    box-shadow: 10px 15px 20px rgba(100, 40, 60, 0.18);
+    transition: transform 0.3s ease;
+}
+
+.journal-card-mini-can::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 5px;
+    right: 5px;
+    height: 9px;
+    background: #ded8d9;
+    border: 1px solid #b9b3b5;
+    border-radius: 50%;
+}
+
+.journal-card-mini-can::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    height: 4px;
+    background: #ded8d9;
+    border-radius: 50%;
+}
+
+.journal-card-mini-can strong {
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+
+.journal-card-mini-can small {
+    font-size: 5px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+.journal-card-mini-can > span {
+    font-size: 45px;
+    margin-top: 12px;
+}
+
+.journal-page-card:hover .journal-card-mini-can {
+    transform: rotate(0) scale(1.08);
+}
+
+/* ARTICLE TEXT */
+
+.journal-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 26px;
+}
+
+.journal-card-category {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #b95d50;
+    margin: 0 0 18px;
+}
+
+.journal-card-content h3 {
+    font-size: 23px;
+    line-height: 1.35;
+    letter-spacing: -0.5px;
+    margin: 0 0 18px;
+}
+
+.journal-card-description {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #725e58;
+    margin-bottom: 25px;
+}
+
+.journal-card-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #eadbd3;
+    font-size: 14px;
+    font-weight: 700;
+    color: #b95d50;
+}
+
+.journal-card-link > span {
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.journal-page-card:hover .journal-card-link > span {
+    transform: translateX(5px);
+}
+
+/* INSTAGRAM BANNER */
+
+.journal-social-banner {
+    position: relative;
+    background: #e5ead8;
+    border-radius: 30px;
+    padding: 55px;
+    margin: 70px 0 35px;
+    overflow: hidden;
+}
+
+.journal-social-banner > div:first-child {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.journal-social-banner .eyebrow {
+    color: #728653;
+}
+
+.journal-social-banner h2 {
+    font-size: clamp(30px, 4vw, 46px);
+    letter-spacing: -1.5px;
+    margin: 0 0 20px;
+}
+
+.journal-social-banner p:not(.eyebrow) {
+    max-width: 520px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #725e58;
+    margin-bottom: 25px;
+}
+
+.journal-social-button {
+    display: inline-block;
+    background: #728653;
+    color: white;
+    border-radius: 30px;
+    padding: 15px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.journal-social-button:hover {
+    background: #5c7040;
+}
+
+.journal-social-decoration {
+    position: absolute;
+    right: -25px;
+    bottom: -80px;
+    font-size: 340px;
+    line-height: 1;
+    color: #a8ba8d;
+    opacity: 0.5;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .journal-page-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .vitls-journal-page {
+        padding: 25px 20px 50px;
+    }
+
+    .journal-page-hero {
+        min-height: 330px;
+        padding: 45px 25px;
+        border-radius: 24px;
+    }
+
+    .journal-page-hero h1 {
+        font-size: 42px;
+        letter-spacing: -1.5px;
+    }
+
+    .journal-page-hero-content > p:not(.eyebrow) {
+        font-size: 16px;
+    }
+
+    .journal-page-tag {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .journal-hero-decoration {
+        font-size: 180px;
+    }
+
+    .journal-page-articles {
+        margin: 50px 0;
+    }
+
+    .journal-page-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .journal-page-heading > p {
+        max-width: 100%;
+    }
+
+    .journal-filter {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .journal-page-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .journal-card-visual {
+        height: 220px;
+    }
+
+    .journal-card-content {
+        padding: 24px;
+    }
+
+    .journal-social-banner {
+        padding: 35px 25px;
+        margin-top: 50px;
+    }
+
+    .journal-social-decoration {
+        font-size: 220px;
+        opacity: 0.25;
+    }
+
+}

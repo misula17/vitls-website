@@ -89,3 +89,69 @@ vitaminItems.forEach(item => {
     });
 
 });
+
+/* =====================================
+   VITLS JOURNAL – ARTICLE FILTERS
+====================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const filterButtons = document.querySelectorAll(
+        ".journal-filter"
+    );
+
+    const articleCards = document.querySelectorAll(
+        ".journal-page-card"
+    );
+
+    const articleCount = document.getElementById(
+        "journalArticleCount"
+    );
+
+    if (!filterButtons.length || !articleCount) {
+        return;
+    }
+
+    filterButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            const selectedCategory = button.dataset.filter;
+
+            filterButtons.forEach(function (item) {
+
+                item.classList.remove("active");
+                item.setAttribute("aria-pressed", "false");
+
+            });
+
+            button.classList.add("active");
+            button.setAttribute("aria-pressed", "true");
+
+            let visibleArticles = 0;
+
+            articleCards.forEach(function (card) {
+
+                const articleCategory = card.dataset.category;
+
+                const shouldShow =
+                    selectedCategory === "all" ||
+                    selectedCategory === articleCategory;
+
+                card.hidden = !shouldShow;
+
+                if (shouldShow) {
+                    visibleArticles++;
+                }
+
+            });
+
+            articleCount.textContent =
+                visibleArticles +
+                (visibleArticles === 1 ? " ARTICLE" : " ARTICLES");
+
+        });
+
+    });
+
+});
