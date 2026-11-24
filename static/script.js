@@ -155,3 +155,125 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+/* =====================================
+   VITLS – COOKIE CONSENT
+====================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const consentKey = "vitls_analytics_consent";
+
+    function loadClarity() {
+
+        if (window.clarity) return;
+
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){
+                (c[a].q=c[a].q||[]).push(arguments)
+            };
+            t=l.createElement(r);
+            t.async=1;
+            t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "zinnkhizdq");
+
+        window.clarity("consentv2", {
+            analytics_Storage: "granted",
+            ad_Storage: "denied"
+        });
+    }
+
+    const cookieBanner = document.createElement("div");
+
+    cookieBanner.className = "vitls-cookie-banner";
+    cookieBanner.hidden = true;
+
+    cookieBanner.innerHTML = `
+        <div class="cookie-content">
+
+            <span class="cookie-label">
+                YOUR PRIVACY MATTERS
+            </span>
+
+            <h3>A little about cookies.</h3>
+
+            <p>
+                We use Microsoft Clarity to understand
+                how you explore VITLS and improve your
+                browsing experience. You can choose
+                whether to allow analytics cookies.
+            </p>
+
+            <div class="cookie-actions">
+
+                <button type="button" id="acceptAnalytics">
+                    Accept analytics
+                </button>
+
+                <button type="button" id="rejectAnalytics">
+                    Reject analytics
+                </button>
+
+            </div>
+
+        </div>
+    `;
+
+    document.body.appendChild(cookieBanner);
+
+    const settingsButton = document.createElement("button");
+
+    settingsButton.type = "button";
+    settingsButton.className = "cookie-settings-button";
+    settingsButton.textContent = "Cookie settings";
+
+    document.body.appendChild(settingsButton);
+
+    const savedConsent = localStorage.getItem(consentKey);
+
+    if (savedConsent === "accepted") {
+        loadClarity();
+    } else if (savedConsent !== "rejected") {
+        cookieBanner.hidden = false;
+    }
+
+    document.getElementById("acceptAnalytics")
+        .addEventListener("click", function () {
+
+            localStorage.setItem(consentKey, "accepted");
+
+            cookieBanner.hidden = true;
+
+            loadClarity();
+
+        });
+
+    document.getElementById("rejectAnalytics")
+        .addEventListener("click", function () {
+
+            localStorage.setItem(consentKey, "rejected");
+
+            cookieBanner.hidden = true;
+
+            if (window.clarity) {
+
+                window.clarity("consentv2", {
+                    analytics_Storage: "denied",
+                    ad_Storage: "denied"
+                });
+
+                window.location.reload();
+
+            }
+
+        });
+
+    settingsButton.addEventListener("click", function () {
+
+        cookieBanner.hidden = false;
+
+    });
+
+});

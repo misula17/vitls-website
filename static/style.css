@@ -3660,3 +3660,112 @@ a.process-step:hover .process-content h3 {
     }
 
 }
+
+/* =====================================
+   VITLS – COOKIE BANNER
+====================================== */
+
+.vitls-cookie-banner {
+    position: fixed;
+    bottom: 55px;
+    left: 24px;
+    width: 420px;
+    max-width: calc(100% - 48px);
+    box-sizing: border-box;
+    background: #fffaf6;
+    border: 1px solid #eadbd3;
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 10px 40px rgba(70, 40, 30, 0.12);
+    z-index: 9999;
+}
+
+.vitls-cookie-banner[hidden] {
+    display: none !important;
+}
+
+.cookie-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #b95d50;
+}
+
+.cookie-content h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #302521;
+    margin: 12px 0;
+}
+
+.cookie-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #725e58;
+    margin-bottom: 22px;
+}
+
+.cookie-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.cookie-actions button {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #b95d50;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#acceptAnalytics,
+#rejectAnalytics {
+    background: #b95d50;
+    color: #ffffff;
+}
+
+#acceptAnalytics:hover,
+#rejectAnalytics:hover {
+    background: #9e4b40;
+}
+
+.cookie-settings-button {
+    position: fixed;
+    bottom: 15px;
+    left: 24px;
+    background: #fffaf6;
+    color: #725e58;
+    border: 1px solid #eadbd3;
+    border-radius: 30px;
+    padding: 8px 15px;
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+    z-index: 9998;
+}
+
+.cookie-settings-button:hover {
+    background: #f7eee8;
+}
+
+@media (max-width: 600px) {
+    .vitls-cookie-banner {
+        left: 12px;
+        bottom: 55px;
+        width: calc(100% - 24px);
+        max-width: none;
+        padding: 22px;
+    }
+
+    .cookie-actions {
+        flex-direction: column;
+    }
+
+    .cookie-settings-button {
+        left: 12px;
+    }
+}
