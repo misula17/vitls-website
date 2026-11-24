@@ -51,16 +51,20 @@ shopLinks.forEach(link => {
 const newsletterForm = document.getElementById("newsletterForm");
 const formMessage = document.getElementById("formMessage");
 
-newsletterForm.addEventListener("submit", event => {
+if (newsletterForm && formMessage) {
 
-    event.preventDefault();
+    newsletterForm.addEventListener("submit", event => {
 
-    formMessage.textContent =
-        "Thank you! You're now in the VITLS loop. ♡";
+        event.preventDefault();
 
-    newsletterForm.reset();
+        formMessage.textContent =
+            "Thank you! You're now in the VITLS loop. ♡";
 
-});
+        newsletterForm.reset();
+
+    });
+
+}
 
 // ========================================
 // VITAMIN ACCORDION
